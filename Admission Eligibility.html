@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Eligibility</title>
+</head>
+<body>
+    <script>
+        let mathMarks = prompt("Enter your Maths Mark");
+
+        let phyhMarks = prompt("Enter your Physics Mark");
+
+        let chemMarks = prompt("Enter your Chemistry Mark");
+
+        let totalMarks = prompt("Total Marks");
+
+        let mathPhysicsTotal = prompt("Enter your MathsPhysicsTotal Mark");
+
+        let checkAdmissionEligibility;
+
+        if (
+            mathMarks >= 65 &&
+            phyMarks >= 55 &&
+            chemMarks >= 50 &&
+            (totalMarks >= 190 || mathPhysicsTotal >= 140)
+        ) {
+            document.write("The candidate is eligible for admission.");
+        } else {
+            document.write("The candidate is not eligible for admission.");
+        }
+    </script>
+</body>
+</html>
